@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  JDCycleView.h
 //  VSP
 //
 //  Created by FighterRay on 2017/7/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface JDCycleView : UIView
 
 @end
-
