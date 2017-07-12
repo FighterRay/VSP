@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCCycleScrollView.h"
 
 @interface HomepageViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet CCCycleScrollView *cccycleScrollView;
 
 @end

@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		69BD179B1F14B92A0078542D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD179A1F14B92A0078542D /* main.m */; };
 		69BD179E1F14B92A0078542D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD179D1F14B92A0078542D /* AppDelegate.m */; };
-		69BD17A11F14B92A0078542D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17A01F14B92A0078542D /* FirstViewController.m */; };
 		69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17A31F14B92A0078542D /* SecondViewController.m */; };
 		69BD17A71F14B92A0078542D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17A51F14B92A0078542D /* Main.storyboard */; };
 		69BD17A91F14B92A0078542D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17A81F14B92A0078542D /* Assets.xcassets */; };
 		69BD17AC1F14B92A0078542D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17AA1F14B92A0078542D /* LaunchScreen.storyboard */; };
+		69BD17B91F14BF6C0078542D /* VSPCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17B81F14BF6C0078542D /* VSPCycleView.m */; };
+		69BD17BB1F14BFA90078542D /* VSPCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17BA1F14BFA80078542D /* VSPCycleView.xib */; };
+		69BD17BE1F14C7500078542D /* CCCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17BD1F14C7500078542D /* CCCycleScrollView.m */; };
+		69BD17C11F14C8480078542D /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17C01F14C8480078542D /* HomepageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,19 @@
 		69BD179A1F14B92A0078542D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69BD179C1F14B92A0078542D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69BD179D1F14B92A0078542D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		69BD179F1F14B92A0078542D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		69BD17A01F14B92A0078542D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		69BD17A21F14B92A0078542D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		69BD17A31F14B92A0078542D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		69BD17A61F14B92A0078542D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69BD17A81F14B92A0078542D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69BD17AB1F14B92A0078542D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69BD17AD1F14B92A0078542D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69BD17B71F14BF6C0078542D /* VSPCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPCycleView.h; sourceTree = "<group>"; };
+		69BD17B81F14BF6C0078542D /* VSPCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPCycleView.m; sourceTree = "<group>"; };
+		69BD17BA1F14BFA80078542D /* VSPCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSPCycleView.xib; sourceTree = "<group>"; };
+		69BD17BC1F14C7500078542D /* CCCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCycleScrollView.h; sourceTree = "<group>"; };
+		69BD17BD1F14C7500078542D /* CCCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCycleScrollView.m; sourceTree = "<group>"; };
+		69BD17BF1F14C8480078542D /* HomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageViewController.h; sourceTree = "<group>"; };
+		69BD17C01F14C8480078542D /* HomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +71,15 @@
 			children = (
 				69BD179C1F14B92A0078542D /* AppDelegate.h */,
 				69BD179D1F14B92A0078542D /* AppDelegate.m */,
-				69BD179F1F14B92A0078542D /* FirstViewController.h */,
-				69BD17A01F14B92A0078542D /* FirstViewController.m */,
+				69BD17BF1F14C8480078542D /* HomepageViewController.h */,
+				69BD17C01F14C8480078542D /* HomepageViewController.m */,
 				69BD17A21F14B92A0078542D /* SecondViewController.h */,
 				69BD17A31F14B92A0078542D /* SecondViewController.m */,
 				69BD17A51F14B92A0078542D /* Main.storyboard */,
 				69BD17A81F14B92A0078542D /* Assets.xcassets */,
 				69BD17AA1F14B92A0078542D /* LaunchScreen.storyboard */,
 				69BD17AD1F14B92A0078542D /* Info.plist */,
+				69BD17B31F14B9B70078542D /* HomepageViews */,
 				69BD17991F14B92A0078542D /* Supporting Files */,
 			);
 			path = VSP;
@@ -82,6 +91,18 @@
 				69BD179A1F14B92A0078542D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69BD17B31F14B9B70078542D /* HomepageViews */ = {
+			isa = PBXGroup;
+			children = (
+				69BD17B71F14BF6C0078542D /* VSPCycleView.h */,
+				69BD17B81F14BF6C0078542D /* VSPCycleView.m */,
+				69BD17BA1F14BFA80078542D /* VSPCycleView.xib */,
+				69BD17BC1F14C7500078542D /* CCCycleScrollView.h */,
+				69BD17BD1F14C7500078542D /* CCCycleScrollView.m */,
+			);
+			path = HomepageViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69BD17AC1F14B92A0078542D /* LaunchScreen.storyboard in Resources */,
+				69BD17BB1F14BFA90078542D /* VSPCycleView.xib in Resources */,
 				69BD17A91F14B92A0078542D /* Assets.xcassets in Resources */,
 				69BD17A71F14B92A0078542D /* Main.storyboard in Resources */,
 			);
@@ -157,7 +179,9 @@
 			files = (
 				69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */,
 				69BD179E1F14B92A0078542D /* AppDelegate.m in Sources */,
-				69BD17A11F14B92A0078542D /* FirstViewController.m in Sources */,
+				69BD17BE1F14C7500078542D /* CCCycleScrollView.m in Sources */,
+				69BD17B91F14BF6C0078542D /* VSPCycleView.m in Sources */,
+				69BD17C11F14C8480078542D /* HomepageViewController.m in Sources */,
 				69BD179B1F14B92A0078542D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
