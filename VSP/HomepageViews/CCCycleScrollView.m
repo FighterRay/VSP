@@ -10,7 +10,7 @@
 
 #define CC_CYCLEINDEX_CALCULATE(x,y) (x+y)%y  //计算循环索引
 #define CC_DEFAULT_DURATION_TIME 2.0f         //默认持续时间
-#define CC_DEFAULT_DURATION_FRAME CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height/4)
+#define CC_DEFAULT_DURATION_FRAME CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,150)
 //#define CC_SIZE_WIDTH frame.size.width
 //#define CC_SIZE_HIGHT frame.size.height
 //#define CC_ORIGIN_X frame.origin.x
@@ -28,12 +28,20 @@
 
 @end
 
-
-
 @implementation CCCycleScrollView
 
 
 #pragma mark - init function
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    NSMutableArray *imagesArr = [NSMutableArray array];
+    for (int i = 0; i < 3; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"cycle_image%d", i]];
+        [imagesArr addObject:image];
+    }
+    return [self initWithImages:imagesArr];
+}
+
 - (instancetype)initWithImages:(NSArray *)images
 {
     return [self initWithImages:images withFrame:CC_DEFAULT_DURATION_FRAME];

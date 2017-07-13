@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */; };
+		69093C031F177CF9006D5DBD /* AdvertisementCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */; };
+		69308C4D1F17521C00FEA6A9 /* VSPHomepageSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */; };
+		69308C4F1F17523700FEA6A9 /* VSPHomepageSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69308C4E1F17523700FEA6A9 /* VSPHomepageSearchView.xib */; };
+		69308C541F1761F100FEA6A9 /* AnnouncementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69308C521F1761F100FEA6A9 /* AnnouncementTableViewCell.m */; };
+		69308C551F1761F100FEA6A9 /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69308C531F1761F100FEA6A9 /* AnnouncementTableViewCell.xib */; };
 		69BD179B1F14B92A0078542D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD179A1F14B92A0078542D /* main.m */; };
 		69BD179E1F14B92A0078542D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD179D1F14B92A0078542D /* AppDelegate.m */; };
 		69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17A31F14B92A0078542D /* SecondViewController.m */; };
@@ -17,9 +23,21 @@
 		69BD17BB1F14BFA90078542D /* VSPCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17BA1F14BFA80078542D /* VSPCycleView.xib */; };
 		69BD17BE1F14C7500078542D /* CCCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17BD1F14C7500078542D /* CCCycleScrollView.m */; };
 		69BD17C11F14C8480078542D /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17C01F14C8480078542D /* HomepageViewController.m */; };
+		69BD17C51F174C440078542D /* VSPSaleServiceSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17C31F174C440078542D /* VSPSaleServiceSearchView.m */; };
+		69BD17C61F174C440078542D /* VSPSaleServiceSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17C41F174C440078542D /* VSPSaleServiceSearchView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69093BFE1F177BAE006D5DBD /* AdvertisementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementTableViewCell.h; sourceTree = "<group>"; };
+		69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementTableViewCell.m; sourceTree = "<group>"; };
+		69093C011F177CF9006D5DBD /* AdvertisementCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementCollectionViewCell.h; sourceTree = "<group>"; };
+		69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementCollectionViewCell.m; sourceTree = "<group>"; };
+		69308C4B1F17521C00FEA6A9 /* VSPHomepageSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPHomepageSearchView.h; sourceTree = "<group>"; };
+		69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPHomepageSearchView.m; sourceTree = "<group>"; };
+		69308C4E1F17523700FEA6A9 /* VSPHomepageSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSPHomepageSearchView.xib; sourceTree = "<group>"; };
+		69308C511F1761F100FEA6A9 /* AnnouncementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementTableViewCell.h; sourceTree = "<group>"; };
+		69308C521F1761F100FEA6A9 /* AnnouncementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementTableViewCell.m; sourceTree = "<group>"; };
+		69308C531F1761F100FEA6A9 /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		69BD17961F14B92A0078542D /* VSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BD179A1F14B92A0078542D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69BD179C1F14B92A0078542D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +55,9 @@
 		69BD17BD1F14C7500078542D /* CCCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCycleScrollView.m; sourceTree = "<group>"; };
 		69BD17BF1F14C8480078542D /* HomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageViewController.h; sourceTree = "<group>"; };
 		69BD17C01F14C8480078542D /* HomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageViewController.m; sourceTree = "<group>"; };
+		69BD17C21F174C440078542D /* VSPSaleServiceSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPSaleServiceSearchView.h; sourceTree = "<group>"; };
+		69BD17C31F174C440078542D /* VSPSaleServiceSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPSaleServiceSearchView.m; sourceTree = "<group>"; };
+		69BD17C41F174C440078542D /* VSPSaleServiceSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSPSaleServiceSearchView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +71,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69308C501F17601000FEA6A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69308C511F1761F100FEA6A9 /* AnnouncementTableViewCell.h */,
+				69308C521F1761F100FEA6A9 /* AnnouncementTableViewCell.m */,
+				69308C531F1761F100FEA6A9 /* AnnouncementTableViewCell.xib */,
+				69093BFE1F177BAE006D5DBD /* AdvertisementTableViewCell.h */,
+				69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */,
+				69093C011F177CF9006D5DBD /* AdvertisementCollectionViewCell.h */,
+				69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		69BD178D1F14B92A0078542D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +136,13 @@
 				69BD17BA1F14BFA80078542D /* VSPCycleView.xib */,
 				69BD17BC1F14C7500078542D /* CCCycleScrollView.h */,
 				69BD17BD1F14C7500078542D /* CCCycleScrollView.m */,
+				69BD17C21F174C440078542D /* VSPSaleServiceSearchView.h */,
+				69BD17C31F174C440078542D /* VSPSaleServiceSearchView.m */,
+				69BD17C41F174C440078542D /* VSPSaleServiceSearchView.xib */,
+				69308C4B1F17521C00FEA6A9 /* VSPHomepageSearchView.h */,
+				69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */,
+				69308C4E1F17523700FEA6A9 /* VSPHomepageSearchView.xib */,
+				69308C501F17601000FEA6A9 /* Cells */,
 			);
 			path = HomepageViews;
 			sourceTree = "<group>";
@@ -165,8 +207,11 @@
 			files = (
 				69BD17AC1F14B92A0078542D /* LaunchScreen.storyboard in Resources */,
 				69BD17BB1F14BFA90078542D /* VSPCycleView.xib in Resources */,
+				69308C4F1F17523700FEA6A9 /* VSPHomepageSearchView.xib in Resources */,
+				69308C551F1761F100FEA6A9 /* AnnouncementTableViewCell.xib in Resources */,
 				69BD17A91F14B92A0078542D /* Assets.xcassets in Resources */,
 				69BD17A71F14B92A0078542D /* Main.storyboard in Resources */,
+				69BD17C61F174C440078542D /* VSPSaleServiceSearchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +223,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */,
+				69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */,
+				69BD17C51F174C440078542D /* VSPSaleServiceSearchView.m in Sources */,
+				69308C541F1761F100FEA6A9 /* AnnouncementTableViewCell.m in Sources */,
+				69308C4D1F17521C00FEA6A9 /* VSPHomepageSearchView.m in Sources */,
 				69BD179E1F14B92A0078542D /* AppDelegate.m in Sources */,
 				69BD17BE1F14C7500078542D /* CCCycleScrollView.m in Sources */,
 				69BD17B91F14BF6C0078542D /* VSPCycleView.m in Sources */,
+				69093C031F177CF9006D5DBD /* AdvertisementCollectionViewCell.m in Sources */,
 				69BD17C11F14C8480078542D /* HomepageViewController.m in Sources */,
 				69BD179B1F14B92A0078542D /* main.m in Sources */,
 			);
@@ -341,6 +391,7 @@
 				69BD17B21F14B92A0078542D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

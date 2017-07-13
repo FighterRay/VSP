@@ -118,7 +118,7 @@
     }
 }
 
-#pragma - Timer
+#pragma mark - Timer
 
 - (void)configureTimer {
     self.timer = [NSTimer timerWithTimeInterval:self.timeInterval
@@ -135,6 +135,47 @@
         return;
     }
     
+    self.currentNumber ++;
+    self.currentNumber = (self.currentNumber + self.images.count) % self.images.count;
+    self.pageControl.currentPage = self.currentNumber;
+    [self.scrollView setContentOffset:CGPointMake(2*self.scrollView.frame.size.width, 0) animated:YES];
+    [self changeImageViewWith:self.currentNumber];
+    self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.origin.x, self.scrollView.frame.origin.y);
+}
+
+#pragma mark - iamgeView cycle changed
+
+- (void)changeImageViewWith:(NSInteger)imageNumber {
+    self.middleImageView.image = self.images[(imageNumber + self.images.count) / self.images.count];
+    self.leftImageView.image = self.images[(imageNumber - 1 + self.images.count) / self.images.count];
+    self.rightImageView.image = self.images[(imageNumber + 1 + self.images.count) / self.images.count];
+}
+
+#pragma mark - ScrollView  Delegate
+
+//当用户手动个轮播时 关闭定时器
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self.timer invalidate];
+}
+
+//当用户手指停止滑动图片时 启动定时器
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    [self configureTimer];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGPoint offset = [self.scrollView contentOffset];
+    if (offset.x == 2 * self.scrollView.frame.size.width) {
+        self.currentNumber = (self.currentNumber + 1 + self.images.count) / self.images.count;
+    } else if (offset.x == 0){
+        self.currentNumber = (self.currentNumber -  1 + self.images.count) / self.images.count;
+    } else {
+        return;
+    }
+    
+    self.pageControl.currentPage = self.currentNumber;
+    [self changeImageViewWith:self.currentNumber];
+    self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, self.scrollView.frame.origin.y);
     
 }
 

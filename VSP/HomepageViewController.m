@@ -7,8 +7,12 @@
 //
 
 #import "HomepageViewController.h"
+#import "VSPCycleView.h"
+#import "VSPSaleServiceSearchView.h"
+#import "AnnouncementTableViewCell.h"
 
-@interface HomepageViewController ()<CCCycleScrollViewClickActionDeleage>
+@interface HomepageViewController ()<UITableViewDelegate, UITableViewDataSource, CCCycleScrollViewClickActionDeleage, VSPCycleViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -18,6 +22,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self configureCCCycleScrollView];
+    
+    UINavigationBar *navBar = self.navigationController.navigationBar;
+    navBar.hidden = YES;
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 - (void)configureCCCycleScrollView {
@@ -26,14 +36,6 @@
         UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"cycle_image%d", i]];
         [imagesArr addObject:image];
     }
-    
-    self.cccycleScrollView = [[CCCycleScrollView alloc]initWithImages:imagesArr];
-    self.cccycleScrollView.pageDescrips = @[@"大海",@"花",@"长灯",@"阳光下的身影",@"秋树",@"摩天轮"];
-    self.cccycleScrollView.delegate = self;
-    self.cccycleScrollView.backgroundColor = [UIColor grayColor];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.cccycleScrollView.frame = CGRectMake(0, 64, 365, 200);
-    [self.view addSubview:self.cccycleScrollView];
 }
 
 - (void)cyclePageClickAction:(NSInteger)clickIndex
@@ -41,9 +43,54 @@
     NSLog(@"点击了第%ld个图片:%@",clickIndex,self.cccycleScrollView.pageDescrips[clickIndex]);
 }
 
+- (void)vspCycleViewClickAtIndex:(NSInteger)index {
+    NSLog(@"%ld", (long)index);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - TableView Delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 5;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger row = indexPath.row;
+    if (row == 0 || row == 2) {
+        return 150;
+    } else if (row == 1 || row == 3) {
+        return 30;
+    } else {
+        return 330;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger row = indexPath.row;
+    if (row == 0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CycleViewTableViewCell" forIndexPath:indexPath];
+        return cell;
+    } else if (row == 1) {
+        AnnouncementTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AnnouncementTableViewCell" forIndexPath:indexPath];
+        return cell;
+    } else if (row == 2) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AdvertisementTableViewCell" forIndexPath:indexPath];
+        return cell;
+    } else if (row == 3) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TitleTableViewCell" forIndexPath:indexPath];
+        return cell;
+    } else {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HotSaleTableViewCell" forIndexPath:indexPath];
+        return cell;
+    }
 }
 
 /*
