@@ -7,6 +7,8 @@
 //
 
 #import "VSPHomepageSearchView.h"
+#import "PopMenuView.h"
+#import "PopMenuModel.h"
 
 @implementation VSPHomepageSearchView
 
@@ -34,6 +36,26 @@
         [self addSubview:view];
     }
     return self;
+}
+
+- (IBAction)leftButtonAction:(id)sender {
+    
+    NSMutableArray *popModel = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < 3; i++) {
+        
+        PopMenuModel * info = [PopMenuModel new];
+//        info.image = [UIImage imageNamed:@"first"];
+        info.title = @"111";
+        [popModel addObject:info];
+    }
+    
+    CGRect rect = CGRectMake(0, 64, 160, 120);
+    [PopMenuView showWithFrame:rect
+                         items:popModel
+                        action:^(NSInteger index) {
+                            NSLog(@"%ld", index);
+                        }];
 }
 
 @end

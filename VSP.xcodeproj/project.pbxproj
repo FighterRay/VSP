@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6906E5FE1F185F0700BA018B /* HotSaleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E5FD1F185F0700BA018B /* HotSaleTableViewCell.m */; };
+		6906E6021F186A6E00BA018B /* HotSaleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E6011F186A6E00BA018B /* HotSaleCollectionViewCell.m */; };
+		6906E6081F189EF900BA018B /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E6071F189EF900BA018B /* PopMenuView.m */; };
+		6906E60B1F18A31B00BA018B /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E60A1F18A31B00BA018B /* PopMenuModel.m */; };
+		6906E60F1F18BC7800BA018B /* PopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E60D1F18BC7800BA018B /* PopMenuTableViewCell.m */; };
+		6906E6101F18BC7800BA018B /* PopMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6906E60E1F18BC7800BA018B /* PopMenuTableViewCell.xib */; };
 		69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */; };
 		69093C031F177CF9006D5DBD /* AdvertisementCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */; };
 		69308C4D1F17521C00FEA6A9 /* VSPHomepageSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */; };
@@ -28,6 +34,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6906E5FC1F185F0700BA018B /* HotSaleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSaleTableViewCell.h; sourceTree = "<group>"; };
+		6906E5FD1F185F0700BA018B /* HotSaleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSaleTableViewCell.m; sourceTree = "<group>"; };
+		6906E6001F186A6E00BA018B /* HotSaleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSaleCollectionViewCell.h; sourceTree = "<group>"; };
+		6906E6011F186A6E00BA018B /* HotSaleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSaleCollectionViewCell.m; sourceTree = "<group>"; };
+		6906E6061F189EF900BA018B /* PopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuView.h; sourceTree = "<group>"; };
+		6906E6071F189EF900BA018B /* PopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuView.m; sourceTree = "<group>"; };
+		6906E6091F18A31B00BA018B /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
+		6906E60A1F18A31B00BA018B /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
+		6906E60C1F18BC7800BA018B /* PopMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuTableViewCell.h; sourceTree = "<group>"; };
+		6906E60D1F18BC7800BA018B /* PopMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableViewCell.m; sourceTree = "<group>"; };
+		6906E60E1F18BC7800BA018B /* PopMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopMenuTableViewCell.xib; sourceTree = "<group>"; };
 		69093BFE1F177BAE006D5DBD /* AdvertisementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementTableViewCell.h; sourceTree = "<group>"; };
 		69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementTableViewCell.m; sourceTree = "<group>"; };
 		69093C011F177CF9006D5DBD /* AdvertisementCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementCollectionViewCell.h; sourceTree = "<group>"; };
@@ -71,16 +88,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69308C501F17601000FEA6A9 /* Cells */ = {
+		6906E5FA1F185E8800BA018B /* Announcement */ = {
 			isa = PBXGroup;
 			children = (
 				69308C511F1761F100FEA6A9 /* AnnouncementTableViewCell.h */,
 				69308C521F1761F100FEA6A9 /* AnnouncementTableViewCell.m */,
 				69308C531F1761F100FEA6A9 /* AnnouncementTableViewCell.xib */,
+			);
+			name = Announcement;
+			sourceTree = "<group>";
+		};
+		6906E5FB1F185E9F00BA018B /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
 				69093BFE1F177BAE006D5DBD /* AdvertisementTableViewCell.h */,
 				69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */,
 				69093C011F177CF9006D5DBD /* AdvertisementCollectionViewCell.h */,
 				69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */,
+			);
+			name = Advertisement;
+			sourceTree = "<group>";
+		};
+		6906E5FF1F185F3600BA018B /* HotSale */ = {
+			isa = PBXGroup;
+			children = (
+				6906E5FC1F185F0700BA018B /* HotSaleTableViewCell.h */,
+				6906E5FD1F185F0700BA018B /* HotSaleTableViewCell.m */,
+				6906E6001F186A6E00BA018B /* HotSaleCollectionViewCell.h */,
+				6906E6011F186A6E00BA018B /* HotSaleCollectionViewCell.m */,
+			);
+			name = HotSale;
+			sourceTree = "<group>";
+		};
+		6906E6031F186D3C00BA018B /* SearchNav */ = {
+			isa = PBXGroup;
+			children = (
+				69308C4B1F17521C00FEA6A9 /* VSPHomepageSearchView.h */,
+				69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */,
+				69308C4E1F17523700FEA6A9 /* VSPHomepageSearchView.xib */,
+			);
+			name = SearchNav;
+			sourceTree = "<group>";
+		};
+		6906E6051F189C1500BA018B /* PopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				6906E6061F189EF900BA018B /* PopMenuView.h */,
+				6906E6071F189EF900BA018B /* PopMenuView.m */,
+				6906E60C1F18BC7800BA018B /* PopMenuTableViewCell.h */,
+				6906E60D1F18BC7800BA018B /* PopMenuTableViewCell.m */,
+				6906E60E1F18BC7800BA018B /* PopMenuTableViewCell.xib */,
+				6906E6091F18A31B00BA018B /* PopMenuModel.h */,
+				6906E60A1F18A31B00BA018B /* PopMenuModel.m */,
+			);
+			path = PopMenuView;
+			sourceTree = "<group>";
+		};
+		69308C501F17601000FEA6A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6906E5FA1F185E8800BA018B /* Announcement */,
+				6906E5FB1F185E9F00BA018B /* Advertisement */,
+				6906E5FF1F185F3600BA018B /* HotSale */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -139,9 +208,8 @@
 				69BD17C21F174C440078542D /* VSPSaleServiceSearchView.h */,
 				69BD17C31F174C440078542D /* VSPSaleServiceSearchView.m */,
 				69BD17C41F174C440078542D /* VSPSaleServiceSearchView.xib */,
-				69308C4B1F17521C00FEA6A9 /* VSPHomepageSearchView.h */,
-				69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */,
-				69308C4E1F17523700FEA6A9 /* VSPHomepageSearchView.xib */,
+				6906E6051F189C1500BA018B /* PopMenuView */,
+				6906E6031F186D3C00BA018B /* SearchNav */,
 				69308C501F17601000FEA6A9 /* Cells */,
 			);
 			path = HomepageViews;
@@ -205,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6906E6101F18BC7800BA018B /* PopMenuTableViewCell.xib in Resources */,
 				69BD17AC1F14B92A0078542D /* LaunchScreen.storyboard in Resources */,
 				69BD17BB1F14BFA90078542D /* VSPCycleView.xib in Resources */,
 				69308C4F1F17523700FEA6A9 /* VSPHomepageSearchView.xib in Resources */,
@@ -222,15 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6906E5FE1F185F0700BA018B /* HotSaleTableViewCell.m in Sources */,
 				69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */,
 				69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */,
 				69BD17C51F174C440078542D /* VSPSaleServiceSearchView.m in Sources */,
+				6906E60B1F18A31B00BA018B /* PopMenuModel.m in Sources */,
 				69308C541F1761F100FEA6A9 /* AnnouncementTableViewCell.m in Sources */,
 				69308C4D1F17521C00FEA6A9 /* VSPHomepageSearchView.m in Sources */,
 				69BD179E1F14B92A0078542D /* AppDelegate.m in Sources */,
+				6906E60F1F18BC7800BA018B /* PopMenuTableViewCell.m in Sources */,
 				69BD17BE1F14C7500078542D /* CCCycleScrollView.m in Sources */,
 				69BD17B91F14BF6C0078542D /* VSPCycleView.m in Sources */,
+				6906E6081F189EF900BA018B /* PopMenuView.m in Sources */,
 				69093C031F177CF9006D5DBD /* AdvertisementCollectionViewCell.m in Sources */,
+				6906E6021F186A6E00BA018B /* HotSaleCollectionViewCell.m in Sources */,
 				69BD17C11F14C8480078542D /* HomepageViewController.m in Sources */,
 				69BD179B1F14B92A0078542D /* main.m in Sources */,
 			);

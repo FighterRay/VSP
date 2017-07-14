@@ -69,7 +69,7 @@
     } else if (row == 1 || row == 3) {
         return 30;
     } else {
-        return 330;
+        return 500;
     }
 }
 

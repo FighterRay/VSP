@@ -1,20 +1,20 @@
 //
-//  AdvertisementTableViewCell.m
+//  HotSaleTableViewCell.m
 //  VSP
 //
-//  Created by FighterRay on 2017/7/13.
+//  Created by FighterRay on 2017/7/14.
 //  Copyright © 2017年 FighterRay. All rights reserved.
 //
 
-#import "AdvertisementTableViewCell.h"
-#import "AdvertisementCollectionViewCell.h"
+#import "HotSaleTableViewCell.h"
+#import "HotSaleCollectionViewCell.h"
 
-@interface AdvertisementTableViewCell()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface HotSaleTableViewCell ()<UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
-@implementation AdvertisementTableViewCell
+@implementation HotSaleTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -32,11 +32,11 @@
 #pragma mark - UICollectionView Delegate
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 4;
+    return 9;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    AdvertisementCollectionViewCell *collectionCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AdvertisementCollectionViewCell" forIndexPath:indexPath];
+    HotSaleCollectionViewCell *collectionCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HotSaleCollectionViewCell" forIndexPath:indexPath];
     return collectionCell;
 }
 
