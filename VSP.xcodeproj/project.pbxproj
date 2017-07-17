@@ -13,6 +13,9 @@
 		6906E60B1F18A31B00BA018B /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E60A1F18A31B00BA018B /* PopMenuModel.m */; };
 		6906E60F1F18BC7800BA018B /* PopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E60D1F18BC7800BA018B /* PopMenuTableViewCell.m */; };
 		6906E6101F18BC7800BA018B /* PopMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6906E60E1F18BC7800BA018B /* PopMenuTableViewCell.xib */; };
+		6906E6151F1C686100BA018B /* FloorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E6141F1C686100BA018B /* FloorTableViewCell.m */; };
+		6906E6181F1C99F500BA018B /* FloorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E6171F1C99F500BA018B /* FloorCollectionViewCell.m */; };
+		6906E61B1F1CAF8000BA018B /* VSPCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E61A1F1CAF8000BA018B /* VSPCycleView.m */; };
 		69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */; };
 		69093C031F177CF9006D5DBD /* AdvertisementCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */; };
 		69308C4D1F17521C00FEA6A9 /* VSPHomepageSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */; };
@@ -25,8 +28,6 @@
 		69BD17A71F14B92A0078542D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17A51F14B92A0078542D /* Main.storyboard */; };
 		69BD17A91F14B92A0078542D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17A81F14B92A0078542D /* Assets.xcassets */; };
 		69BD17AC1F14B92A0078542D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17AA1F14B92A0078542D /* LaunchScreen.storyboard */; };
-		69BD17B91F14BF6C0078542D /* VSPCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17B81F14BF6C0078542D /* VSPCycleView.m */; };
-		69BD17BB1F14BFA90078542D /* VSPCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BD17BA1F14BFA80078542D /* VSPCycleView.xib */; };
 		69BD17BE1F14C7500078542D /* CCCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17BD1F14C7500078542D /* CCCycleScrollView.m */; };
 		69BD17C11F14C8480078542D /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17C01F14C8480078542D /* HomepageViewController.m */; };
 		69BD17C51F174C440078542D /* VSPSaleServiceSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17C31F174C440078542D /* VSPSaleServiceSearchView.m */; };
@@ -45,6 +46,12 @@
 		6906E60C1F18BC7800BA018B /* PopMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuTableViewCell.h; sourceTree = "<group>"; };
 		6906E60D1F18BC7800BA018B /* PopMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableViewCell.m; sourceTree = "<group>"; };
 		6906E60E1F18BC7800BA018B /* PopMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopMenuTableViewCell.xib; sourceTree = "<group>"; };
+		6906E6131F1C686100BA018B /* FloorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorTableViewCell.h; sourceTree = "<group>"; };
+		6906E6141F1C686100BA018B /* FloorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorTableViewCell.m; sourceTree = "<group>"; };
+		6906E6161F1C99F500BA018B /* FloorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorCollectionViewCell.h; sourceTree = "<group>"; };
+		6906E6171F1C99F500BA018B /* FloorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorCollectionViewCell.m; sourceTree = "<group>"; };
+		6906E6191F1CAF8000BA018B /* VSPCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPCycleView.h; sourceTree = "<group>"; };
+		6906E61A1F1CAF8000BA018B /* VSPCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPCycleView.m; sourceTree = "<group>"; };
 		69093BFE1F177BAE006D5DBD /* AdvertisementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementTableViewCell.h; sourceTree = "<group>"; };
 		69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementTableViewCell.m; sourceTree = "<group>"; };
 		69093C011F177CF9006D5DBD /* AdvertisementCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementCollectionViewCell.h; sourceTree = "<group>"; };
@@ -65,9 +72,6 @@
 		69BD17A81F14B92A0078542D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69BD17AB1F14B92A0078542D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69BD17AD1F14B92A0078542D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69BD17B71F14BF6C0078542D /* VSPCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPCycleView.h; sourceTree = "<group>"; };
-		69BD17B81F14BF6C0078542D /* VSPCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPCycleView.m; sourceTree = "<group>"; };
-		69BD17BA1F14BFA80078542D /* VSPCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSPCycleView.xib; sourceTree = "<group>"; };
 		69BD17BC1F14C7500078542D /* CCCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCycleScrollView.h; sourceTree = "<group>"; };
 		69BD17BD1F14C7500078542D /* CCCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCycleScrollView.m; sourceTree = "<group>"; };
 		69BD17BF1F14C8480078542D /* HomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageViewController.h; sourceTree = "<group>"; };
@@ -144,9 +148,21 @@
 			path = PopMenuView;
 			sourceTree = "<group>";
 		};
+		6906E6121F1C681500BA018B /* Floor */ = {
+			isa = PBXGroup;
+			children = (
+				6906E6131F1C686100BA018B /* FloorTableViewCell.h */,
+				6906E6141F1C686100BA018B /* FloorTableViewCell.m */,
+				6906E6161F1C99F500BA018B /* FloorCollectionViewCell.h */,
+				6906E6171F1C99F500BA018B /* FloorCollectionViewCell.m */,
+			);
+			name = Floor;
+			sourceTree = "<group>";
+		};
 		69308C501F17601000FEA6A9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				6906E6121F1C681500BA018B /* Floor */,
 				6906E5FA1F185E8800BA018B /* Announcement */,
 				6906E5FB1F185E9F00BA018B /* Advertisement */,
 				6906E5FF1F185F3600BA018B /* HotSale */,
@@ -200,9 +216,8 @@
 		69BD17B31F14B9B70078542D /* HomepageViews */ = {
 			isa = PBXGroup;
 			children = (
-				69BD17B71F14BF6C0078542D /* VSPCycleView.h */,
-				69BD17B81F14BF6C0078542D /* VSPCycleView.m */,
-				69BD17BA1F14BFA80078542D /* VSPCycleView.xib */,
+				6906E6191F1CAF8000BA018B /* VSPCycleView.h */,
+				6906E61A1F1CAF8000BA018B /* VSPCycleView.m */,
 				69BD17BC1F14C7500078542D /* CCCycleScrollView.h */,
 				69BD17BD1F14C7500078542D /* CCCycleScrollView.m */,
 				69BD17C21F174C440078542D /* VSPSaleServiceSearchView.h */,
@@ -275,7 +290,6 @@
 			files = (
 				6906E6101F18BC7800BA018B /* PopMenuTableViewCell.xib in Resources */,
 				69BD17AC1F14B92A0078542D /* LaunchScreen.storyboard in Resources */,
-				69BD17BB1F14BFA90078542D /* VSPCycleView.xib in Resources */,
 				69308C4F1F17523700FEA6A9 /* VSPHomepageSearchView.xib in Resources */,
 				69308C551F1761F100FEA6A9 /* AnnouncementTableViewCell.xib in Resources */,
 				69BD17A91F14B92A0078542D /* Assets.xcassets in Resources */,
@@ -294,6 +308,7 @@
 				6906E5FE1F185F0700BA018B /* HotSaleTableViewCell.m in Sources */,
 				69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */,
 				69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */,
+				6906E61B1F1CAF8000BA018B /* VSPCycleView.m in Sources */,
 				69BD17C51F174C440078542D /* VSPSaleServiceSearchView.m in Sources */,
 				6906E60B1F18A31B00BA018B /* PopMenuModel.m in Sources */,
 				69308C541F1761F100FEA6A9 /* AnnouncementTableViewCell.m in Sources */,
@@ -301,10 +316,11 @@
 				69BD179E1F14B92A0078542D /* AppDelegate.m in Sources */,
 				6906E60F1F18BC7800BA018B /* PopMenuTableViewCell.m in Sources */,
 				69BD17BE1F14C7500078542D /* CCCycleScrollView.m in Sources */,
-				69BD17B91F14BF6C0078542D /* VSPCycleView.m in Sources */,
+				6906E6151F1C686100BA018B /* FloorTableViewCell.m in Sources */,
 				6906E6081F189EF900BA018B /* PopMenuView.m in Sources */,
 				69093C031F177CF9006D5DBD /* AdvertisementCollectionViewCell.m in Sources */,
 				6906E6021F186A6E00BA018B /* HotSaleCollectionViewCell.m in Sources */,
+				6906E6181F1C99F500BA018B /* FloorCollectionViewCell.m in Sources */,
 				69BD17C11F14C8480078542D /* HomepageViewController.m in Sources */,
 				69BD179B1F14B92A0078542D /* main.m in Sources */,
 			);

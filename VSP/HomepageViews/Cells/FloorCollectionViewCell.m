@@ -1,13 +1,13 @@
 //
-//  VSPCycleView.h
+//  FloorCollectionViewCell.m
 //  VSP
 //
 //  Created by FighterRay on 2017/7/17.
 //  Copyright © 2017年 FighterRay. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FloorCollectionViewCell.h"
 
-@interface VSPCycleView : UIView
+@implementation FloorCollectionViewCell
 
 @end

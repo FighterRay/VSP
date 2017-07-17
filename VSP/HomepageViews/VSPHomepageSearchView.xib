@@ -55,11 +55,23 @@
                         <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="sLT-dH-F6e"/>
                     </connections>
                 </button>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-uE-lua" userLabel="Bottem">
+                    <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Cdu-L7-fue"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="z0h-uE-lua" secondAttribute="trailing" id="6e0-98-XPN"/>
+                <constraint firstAttribute="bottom" secondItem="z0h-uE-lua" secondAttribute="bottom" id="bwU-L7-CZx"/>
+                <constraint firstItem="z0h-uE-lua" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dfz-4j-dT7"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-106" y="-28"/>
+            <point key="canvasLocation" x="-106.5" y="-28"/>
         </view>
     </objects>
     <resources>

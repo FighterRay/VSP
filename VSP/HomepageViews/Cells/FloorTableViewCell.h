@@ -1,5 +1,5 @@
 //
-//  VSPCycleView.h
+//  FloorTableViewCell.h
 //  VSP
 //
 //  Created by FighterRay on 2017/7/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VSPCycleView : UIView
+@interface FloorTableViewCell : UITableViewCell
 
 @end

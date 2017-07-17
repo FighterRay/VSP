@@ -10,8 +10,9 @@
 #import "VSPCycleView.h"
 #import "VSPSaleServiceSearchView.h"
 #import "AnnouncementTableViewCell.h"
+#import "FloorTableViewCell.h"
 
-@interface HomepageViewController ()<UITableViewDelegate, UITableViewDataSource, CCCycleScrollViewClickActionDeleage, VSPCycleViewDelegate>
+@interface HomepageViewController ()<UITableViewDelegate, UITableViewDataSource, CCCycleScrollViewClickActionDeleage>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -21,30 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self configureCCCycleScrollView];
     
     UINavigationBar *navBar = self.navigationController.navigationBar;
     navBar.hidden = YES;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-}
-
-- (void)configureCCCycleScrollView {
-    NSMutableArray *imagesArr = [NSMutableArray array];
-    for (int i = 0; i < 3; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"cycle_image%d", i]];
-        [imagesArr addObject:image];
-    }
-}
-
-- (void)cyclePageClickAction:(NSInteger)clickIndex
-{
-    NSLog(@"点击了第%ld个图片:%@",clickIndex,self.cccycleScrollView.pageDescrips[clickIndex]);
-}
-
-- (void)vspCycleViewClickAtIndex:(NSInteger)index {
-    NSLog(@"%ld", (long)index);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,7 +42,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -68,8 +51,10 @@
         return 150;
     } else if (row == 1 || row == 3) {
         return 30;
-    } else {
+    } else if (row == 4) {
         return 500;
+    } else {
+        return 816;
     }
 }
 
@@ -87,8 +72,11 @@
     } else if (row == 3) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TitleTableViewCell" forIndexPath:indexPath];
         return cell;
-    } else {
+    } else if (row == 4) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HotSaleTableViewCell" forIndexPath:indexPath];
+        return cell;
+    } else {
+        FloorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FloorTableVIewCell"];
         return cell;
     }
 }

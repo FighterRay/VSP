@@ -28,6 +28,8 @@
 
 @end
 
+
+
 @implementation CCCycleScrollView
 
 
@@ -35,9 +37,9 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     NSMutableArray *imagesArr = [NSMutableArray array];
-    for (int i = 0; i < 3; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"cycle_image%d", i]];
-        [imagesArr addObject:image];
+    for (int i = 0; i < 3; i ++) {
+        UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"cycle_image%d", i]];
+        [imagesArr addObject:img];
     }
     return [self initWithImages:imagesArr];
 }
@@ -62,7 +64,7 @@
         _pageChangeTime = changeTime;
         _currentNumber = 0;
 
-        [self cycleViewConfigWithFrame:frame];
+        [self cycleViewConfig];
         //配置pageControl 初始化等
         [self pageControlCongfig];
         //初始化图片描述
@@ -79,18 +81,22 @@
 }
 
 #pragma mark -init configure
-- (void)cycleViewConfigWithFrame:(CGRect)frame
+- (void)cycleViewConfig
 {
-    self.frame = frame;
+    //self.frame = frame;
     //设置三个imageview的位置
-    self.leftImageView  = [[UIImageView alloc]initWithFrame:frame];
-    self.middleImageView = [[UIImageView alloc]initWithFrame:CGRectMake(frame.size.width, frame.origin.y, frame.size.width, frame.size.height)];
-    self.rightImageView = [[UIImageView alloc]initWithFrame:CGRectMake(2*frame.size.width, frame.origin.y, frame.size.width, frame.size.height)];
+
     //初始化容器ScrollView和三个imageview
-    _containerView = [[UIScrollView alloc]initWithFrame:frame];
-    _containerView.contentSize = CGSizeMake(3*frame.size.width, frame.size.height);
-    _containerView.contentOffset = CGPointMake(self.frame.size.width, self.frame.origin.y)//显示中间图片
+    _containerView = [[UIScrollView alloc]initWithFrame:self.bounds];
+    _containerView.contentSize = CGSizeMake(3*_containerView.frame.size.width, _containerView.frame.size.height);
+    _containerView.contentOffset = CGPointMake(_containerView.frame.size.width, _containerView.frame.origin.y)//显示中间图片
     ;
+    _containerView.backgroundColor = [UIColor grayColor];
+    self.leftImageView  = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0  , _containerView.frame.size.width, _containerView.frame.size.height)];
+    
+    self.middleImageView = [[UIImageView alloc]initWithFrame:CGRectMake(_containerView.frame.size.width, 0  , _containerView.frame.size.width, _containerView.frame.size.height)];
+    self.rightImageView = [[UIImageView alloc]initWithFrame:CGRectMake(2*_containerView.frame.size.width, 0, _containerView.frame.size.width, _containerView.frame.size.height)];
+
     _containerView.delegate = self;
     [_containerView addSubview:_leftImageView];
     [_containerView addSubview:_rightImageView];
@@ -126,8 +132,10 @@
 - (void)cycleImageViewConfig
 {
     if ([_images count] == 0) {
+        NSLog(@"cycleImageViewConfig:images is empty!");
         return;
     }
+    
     _middleImageView.image = (UIImage *)_images[CC_CYCLEINDEX_CALCULATE(_currentNumber,_images.count)];
     _leftImageView.image = (UIImage *)_images[CC_CYCLEINDEX_CALCULATE(_currentNumber - 1,_images.count)];
     _rightImageView.image = (UIImage *)_images[CC_CYCLEINDEX_CALCULATE(_currentNumber + 1,_images.count)];
@@ -148,20 +156,26 @@
 //设置定时器
 - (void)timeSetter
 {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:self.pageChangeTime target:self selector:@selector(timeChanged) userInfo:nil repeats:YES];
+    //将定时器放入当前RUNLOOP中，可能会导致定时器的失效
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:self.pageChangeTime target:self selector:@selector(timeChanged) userInfo:nil repeats:YES];
     
-//    self.timer = [NSTimer timerWithTimeInterval:self.pageChangeTime target:self selector:@selector(timeChanged) userInfo:nil repeats:YES];
-//    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    //将定时器放入主进程的RunLoop中
+    self.timer = [NSTimer timerWithTimeInterval:self.pageChangeTime target:self selector:@selector(timeChanged) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    
 }
 - (void)timeChanged
 {
+    if (_images.count == 0) {
+        NSLog(@"timeChanged:images is empty!");
+        return;
+    }
     self.currentNumber =  CC_CYCLEINDEX_CALCULATE(_currentNumber+1,_images.count);
     self.pageControl.currentPage = self.currentNumber;
     [self setPageDescripText];
-    //[self.containerView setContentOffset:CGPointMake(2*self.frame.size.width, self.frame.origin.y) animated:YES];
     [self pageChangeAnimationType:1];
-    
-
+    [self changeImageViewWith:self.currentNumber];
+    self.containerView.contentOffset = CGPointMake(_containerView.frame.origin.x, _containerView.frame.origin.y);
 }
 
 #pragma mark - ScrollView  Delegate
@@ -180,7 +194,7 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     CGPoint offset = [self.containerView contentOffset];
-    if (offset.x == 2*self.frame.size.width) {
+    if (offset.x == 2*_containerView.frame.size.width) {
         self.currentNumber = CC_CYCLEINDEX_CALCULATE(_currentNumber  + 1,_images.count);
     } else if (offset.x == 0){
         self.currentNumber = CC_CYCLEINDEX_CALCULATE(_currentNumber  - 1,_images.count);
@@ -191,7 +205,7 @@
     self.pageControl.currentPage = self.currentNumber;
     [self changeImageViewWith:self.currentNumber];
     [self setPageDescripText];
-    self.containerView.contentOffset = CGPointMake(self.frame.size.width, self.frame.origin.y);
+    self.containerView.contentOffset = CGPointMake(_containerView.frame.size.width, _containerView.frame.origin.y);
 
 }
 
@@ -225,9 +239,9 @@
  */
 - (void)changeImageViewWith:(NSInteger)imageNumber
 {
-    self.middleImageView.image = self.images[(imageNumber + self.images.count)%self.images.count];
-    self.leftImageView.image = self.images[(imageNumber-1+self.images.count)%self.images.count];
-    self.rightImageView.image = self.images[(imageNumber+1+self.images.count)%self.images.count];
+    self.middleImageView.image = self.images[CC_CYCLEINDEX_CALCULATE(imageNumber,self.images.count)];
+    self.leftImageView.image = self.images[CC_CYCLEINDEX_CALCULATE(imageNumber - 1,self.images.count)];
+    self.rightImageView.image = self.images[CC_CYCLEINDEX_CALCULATE(imageNumber + 1,self.images.count)];
 }
 
 
@@ -260,20 +274,17 @@
 - (void)pageChangeAnimationType:(NSInteger)animationType
 {
     if (animationType == 0) {
-        [self.containerView setContentOffset:CGPointMake(2*self.frame.size.width, self.frame.origin.y) animated:YES];
-        
-        self.containerView.contentOffset = CGPointZero;
-    }else if (animationType == 1){
-        self.containerView.contentOffset = CGPointMake(2*self.frame.size.width, self.frame.origin.y);
+        return;
+    }else if (animationType == 1) {
+        [self.containerView setContentOffset:CGPointMake(2*self.containerView.frame.size.width, 0) animated:YES];
+    }else if (animationType == 2){
+        self.containerView.contentOffset = CGPointMake(2*self.frame.size.width, 0);
        [UIView animateWithDuration:self.pageChangeTime delay:0.0f options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
-           [self changeImageViewWith:self.currentNumber];
+           
        } completion:^(BOOL finished) {
-           self.containerView.contentOffset = CGPointZero;
        }];
         
     }
-    
-
 }
 
 
