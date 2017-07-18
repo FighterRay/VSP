@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol VSPCycleViewDelegate <NSObject>
+
+@optional
+- (void)vspCycleViewClickAtIndex:(NSInteger)index;
+
+@end
+
 @interface VSPCycleView : UIView
+
+@property (nonatomic, strong) NSArray *images;
+@property (nonatomic, strong) UIPageControl *pageControl;
+@property (nonatomic, assign) NSTimeInterval timeInterval;
+@property (nonatomic, weak) id<VSPCycleViewDelegate> delegate;
+
+- (instancetype)initWithImages:(NSArray *)images frame:(CGRect)frame timeInterval:(NSTimeInterval)timeInterval;
 
 @end
