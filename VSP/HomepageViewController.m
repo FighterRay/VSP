@@ -11,9 +11,11 @@
 #import "VSPSaleServiceSearchView.h"
 #import "AnnouncementTableViewCell.h"
 #import "FloorTableViewCell.h"
+#import "VSPHomepageSearchView.h"
 
-@interface HomepageViewController ()<UITableViewDelegate, UITableViewDataSource, CCCycleScrollViewClickActionDeleage>
+@interface HomepageViewController ()<UITableViewDelegate, UITableViewDataSource, CCCycleScrollViewClickActionDeleage, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet VSPHomepageSearchView *homepageSearchView;
 
 @end
 
@@ -78,6 +80,19 @@
     } else {
         FloorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FloorTableVIewCell"];
         return cell;
+    }
+}
+
+#pragma mark - UIScrollView Delegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    UIColor *color = [UIColor redColor];
+    CGFloat offsetY = scrollView.contentOffset.y;
+    if (offsetY > 0) {
+        CGFloat alpha = 1 - ((150 - offsetY) / 150);
+        self.homepageSearchView.containrView.backgroundColor = [color colorWithAlphaComponent:alpha];
+    } else {
+        self.homepageSearchView.containrView.backgroundColor = [color colorWithAlphaComponent:0];
     }
 }
 

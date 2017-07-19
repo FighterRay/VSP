@@ -15,7 +15,7 @@
 
 @end
 
-@interface VSPCycleView : UIView
+@interface VSPCycleView : UIView<VSPCycleViewDelegate>
 
 @property (nonatomic, strong) NSArray *images;
 @property (nonatomic, strong) UIPageControl *pageControl;

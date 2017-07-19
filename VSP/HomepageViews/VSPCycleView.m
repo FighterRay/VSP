@@ -49,6 +49,7 @@
         self.images = images;
         self.timeInterval = timeInterval;
         self.currentNumber = 0;
+        self.delegate = self;
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickAction)];
         [self addGestureRecognizer:tap];
@@ -168,6 +169,12 @@
     self.rightImageView.image = self.images[(self.currentNumber + 1 + self.images.count) % self.images.count];
     
     self.containerView.contentOffset = CGPointMake(self.containerView.frame.size.width, self.containerView.frame.origin.y);
+}
+
+#pragma mark - VSPCycleView Delegate
+
+- (void)vspCycleViewClickAtIndex:(NSInteger)index {
+    NSLog(@"%ld", index);
 }
 
 @end

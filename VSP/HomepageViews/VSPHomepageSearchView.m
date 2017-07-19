@@ -24,6 +24,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         UIView *view = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil].firstObject;
+        self.containrView = view;
         [self addSubview:view];
     }
     return self;
@@ -33,6 +34,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         UIView *view = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil].firstObject;
+        self.containrView = view;
         [self addSubview:view];
     }
     return self;

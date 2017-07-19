@@ -297,6 +297,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="homepageSearchView" destination="7UP-dP-dm0" id="h9O-ta-Xv3"/>
                         <outlet property="tableView" destination="GrK-hC-wVb" id="9Rg-3m-KVc"/>
                     </connections>
                 </viewController>

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface VSPHomepageSearchView : UIView
+@property (strong, nonatomic) IBOutlet UIView *containrView;
 
 @end
