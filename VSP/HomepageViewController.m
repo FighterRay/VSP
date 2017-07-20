@@ -12,6 +12,7 @@
 #import "AnnouncementTableViewCell.h"
 #import "FloorTableViewCell.h"
 #import "VSPHomepageSearchView.h"
+#import "JVRefresh.h"
 
 @interface HomepageViewController ()<UITableViewDelegate, UITableViewDataSource, CCCycleScrollViewClickActionDeleage, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -27,6 +28,12 @@
     
     UINavigationBar *navBar = self.navigationController.navigationBar;
     navBar.hidden = YES;
+    
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    
+    statusBar.backgroundColor = [UIColor clearColor];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -56,7 +63,7 @@
     } else if (row == 4) {
         return 500;
     } else {
-        return 816;
+        return 820;
     }
 }
 
@@ -88,11 +95,18 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     UIColor *color = [UIColor redColor];
     CGFloat offsetY = scrollView.contentOffset.y;
+    
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+
+    
     if (offsetY > 0) {
-        CGFloat alpha = 1 - ((150 - offsetY) / 150);
+        CGFloat alpha = (offsetY / 100);
         self.homepageSearchView.containrView.backgroundColor = [color colorWithAlphaComponent:alpha];
+        
+        statusBar.backgroundColor = [color colorWithAlphaComponent:alpha];
     } else {
         self.homepageSearchView.containrView.backgroundColor = [color colorWithAlphaComponent:0];
+        statusBar.backgroundColor = [color colorWithAlphaComponent:0];
     }
 }
 
