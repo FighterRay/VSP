@@ -41,12 +41,24 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnnouncementTableViewCell" rowHeight="30" id="gd7-BQ-haR" customClass="AnnouncementTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnnouncementTableViewCell" rowHeight="30" id="gd7-BQ-haR">
                                         <rect key="frame" x="0.0" y="178" width="375" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gd7-BQ-haR" id="QDi-GM-LOw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="29.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwz-Ue-lRx" customClass="VSPAnnouncementView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Nwz-Ue-lRx" firstAttribute="top" secondItem="QDi-GM-LOw" secondAttribute="top" id="7JM-cA-Ykn"/>
+                                                <constraint firstItem="Nwz-Ue-lRx" firstAttribute="leading" secondItem="QDi-GM-LOw" secondAttribute="leading" id="VRe-Ct-GTm"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nwz-Ue-lRx" secondAttribute="trailing" id="jfw-sj-X4d"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nwz-Ue-lRx" secondAttribute="bottom" id="pno-qk-wU9"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdvertisementTableViewCell" rowHeight="85" id="PmY-oH-Cy1" customClass="AdvertisementTableViewCell">

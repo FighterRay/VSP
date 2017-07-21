@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		690287061F20AD6000720035 /* JVRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 690286FE1F20AD6000720035 /* JVRefreshFooterView.m */; };
-		690287071F20AD6000720035 /* JVRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 690287001F20AD6000720035 /* JVRefreshHeaderView.m */; };
-		690287081F20AD6000720035 /* JVRefreshStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 690287021F20AD6000720035 /* JVRefreshStateView.m */; };
-		690287091F20AD6000720035 /* JVRefreshStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690287031F20AD6000720035 /* JVRefreshStateView.xib */; };
-		6902870A1F20AD6000720035 /* JVRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 690287051F20AD6000720035 /* JVRotateView.m */; };
 		6906E5FE1F185F0700BA018B /* HotSaleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E5FD1F185F0700BA018B /* HotSaleTableViewCell.m */; };
 		6906E6021F186A6E00BA018B /* HotSaleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E6011F186A6E00BA018B /* HotSaleCollectionViewCell.m */; };
 		6906E6081F189EF900BA018B /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E6071F189EF900BA018B /* PopMenuView.m */; };
@@ -23,10 +18,11 @@
 		6906E61B1F1CAF8000BA018B /* VSPCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6906E61A1F1CAF8000BA018B /* VSPCycleView.m */; };
 		69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */; };
 		69093C031F177CF9006D5DBD /* AdvertisementCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */; };
+		690FD8A41F21E90F00CE15F8 /* VSPAnnouncementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FD8A31F21E90F00CE15F8 /* VSPAnnouncementView.m */; };
+		690FD8A61F21E92100CE15F8 /* VSPAnnouncementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690FD8A51F21E92100CE15F8 /* VSPAnnouncementView.xib */; };
 		69308C4D1F17521C00FEA6A9 /* VSPHomepageSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */; };
 		69308C4F1F17523700FEA6A9 /* VSPHomepageSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69308C4E1F17523700FEA6A9 /* VSPHomepageSearchView.xib */; };
 		69308C541F1761F100FEA6A9 /* AnnouncementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69308C521F1761F100FEA6A9 /* AnnouncementTableViewCell.m */; };
-		69308C551F1761F100FEA6A9 /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69308C531F1761F100FEA6A9 /* AnnouncementTableViewCell.xib */; };
 		69BD179B1F14B92A0078542D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD179A1F14B92A0078542D /* main.m */; };
 		69BD179E1F14B92A0078542D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD179D1F14B92A0078542D /* AppDelegate.m */; };
 		69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BD17A31F14B92A0078542D /* SecondViewController.m */; };
@@ -40,16 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		690286FC1F20AD6000720035 /* JVRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRefresh.h; sourceTree = "<group>"; };
-		690286FD1F20AD6000720035 /* JVRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRefreshFooterView.h; sourceTree = "<group>"; };
-		690286FE1F20AD6000720035 /* JVRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRefreshFooterView.m; sourceTree = "<group>"; };
-		690286FF1F20AD6000720035 /* JVRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRefreshHeaderView.h; sourceTree = "<group>"; };
-		690287001F20AD6000720035 /* JVRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRefreshHeaderView.m; sourceTree = "<group>"; };
-		690287011F20AD6000720035 /* JVRefreshStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRefreshStateView.h; sourceTree = "<group>"; };
-		690287021F20AD6000720035 /* JVRefreshStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRefreshStateView.m; sourceTree = "<group>"; };
-		690287031F20AD6000720035 /* JVRefreshStateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVRefreshStateView.xib; sourceTree = "<group>"; };
-		690287041F20AD6000720035 /* JVRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRotateView.h; sourceTree = "<group>"; };
-		690287051F20AD6000720035 /* JVRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRotateView.m; sourceTree = "<group>"; };
 		6906E5FC1F185F0700BA018B /* HotSaleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSaleTableViewCell.h; sourceTree = "<group>"; };
 		6906E5FD1F185F0700BA018B /* HotSaleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSaleTableViewCell.m; sourceTree = "<group>"; };
 		6906E6001F186A6E00BA018B /* HotSaleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSaleCollectionViewCell.h; sourceTree = "<group>"; };
@@ -71,12 +57,14 @@
 		69093BFF1F177BAE006D5DBD /* AdvertisementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementTableViewCell.m; sourceTree = "<group>"; };
 		69093C011F177CF9006D5DBD /* AdvertisementCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementCollectionViewCell.h; sourceTree = "<group>"; };
 		69093C021F177CF9006D5DBD /* AdvertisementCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementCollectionViewCell.m; sourceTree = "<group>"; };
+		690FD8A21F21E90F00CE15F8 /* VSPAnnouncementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPAnnouncementView.h; sourceTree = "<group>"; };
+		690FD8A31F21E90F00CE15F8 /* VSPAnnouncementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPAnnouncementView.m; sourceTree = "<group>"; };
+		690FD8A51F21E92100CE15F8 /* VSPAnnouncementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSPAnnouncementView.xib; sourceTree = "<group>"; };
 		69308C4B1F17521C00FEA6A9 /* VSPHomepageSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPHomepageSearchView.h; sourceTree = "<group>"; };
 		69308C4C1F17521C00FEA6A9 /* VSPHomepageSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPHomepageSearchView.m; sourceTree = "<group>"; };
 		69308C4E1F17523700FEA6A9 /* VSPHomepageSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSPHomepageSearchView.xib; sourceTree = "<group>"; };
 		69308C511F1761F100FEA6A9 /* AnnouncementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementTableViewCell.h; sourceTree = "<group>"; };
 		69308C521F1761F100FEA6A9 /* AnnouncementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementTableViewCell.m; sourceTree = "<group>"; };
-		69308C531F1761F100FEA6A9 /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		69BD17961F14B92A0078542D /* VSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BD179A1F14B92A0078542D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69BD179C1F14B92A0078542D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,29 +95,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		690286FB1F20AD6000720035 /* JVRefreshView */ = {
-			isa = PBXGroup;
-			children = (
-				690286FC1F20AD6000720035 /* JVRefresh.h */,
-				690286FD1F20AD6000720035 /* JVRefreshFooterView.h */,
-				690286FE1F20AD6000720035 /* JVRefreshFooterView.m */,
-				690286FF1F20AD6000720035 /* JVRefreshHeaderView.h */,
-				690287001F20AD6000720035 /* JVRefreshHeaderView.m */,
-				690287011F20AD6000720035 /* JVRefreshStateView.h */,
-				690287021F20AD6000720035 /* JVRefreshStateView.m */,
-				690287031F20AD6000720035 /* JVRefreshStateView.xib */,
-				690287041F20AD6000720035 /* JVRotateView.h */,
-				690287051F20AD6000720035 /* JVRotateView.m */,
-			);
-			path = JVRefreshView;
-			sourceTree = "<group>";
-		};
 		6906E5FA1F185E8800BA018B /* Announcement */ = {
 			isa = PBXGroup;
 			children = (
 				69308C511F1761F100FEA6A9 /* AnnouncementTableViewCell.h */,
 				69308C521F1761F100FEA6A9 /* AnnouncementTableViewCell.m */,
-				69308C531F1761F100FEA6A9 /* AnnouncementTableViewCell.xib */,
 			);
 			name = Announcement;
 			sourceTree = "<group>";
@@ -191,6 +161,16 @@
 			name = Floor;
 			sourceTree = "<group>";
 		};
+		690FD8A11F21E8F600CE15F8 /* AnnouncementView */ = {
+			isa = PBXGroup;
+			children = (
+				690FD8A21F21E90F00CE15F8 /* VSPAnnouncementView.h */,
+				690FD8A31F21E90F00CE15F8 /* VSPAnnouncementView.m */,
+				690FD8A51F21E92100CE15F8 /* VSPAnnouncementView.xib */,
+			);
+			path = AnnouncementView;
+			sourceTree = "<group>";
+		};
 		69308C501F17601000FEA6A9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +212,6 @@
 				69BD17AA1F14B92A0078542D /* LaunchScreen.storyboard */,
 				69BD17AD1F14B92A0078542D /* Info.plist */,
 				69BD17B31F14B9B70078542D /* HomepageViews */,
-				690286FB1F20AD6000720035 /* JVRefreshView */,
 				69BD17991F14B92A0078542D /* Supporting Files */,
 			);
 			path = VSP;
@@ -256,6 +235,7 @@
 				69BD17C21F174C440078542D /* VSPSaleServiceSearchView.h */,
 				69BD17C31F174C440078542D /* VSPSaleServiceSearchView.m */,
 				69BD17C41F174C440078542D /* VSPSaleServiceSearchView.xib */,
+				690FD8A11F21E8F600CE15F8 /* AnnouncementView */,
 				6906E6051F189C1500BA018B /* PopMenuView */,
 				6906E6031F186D3C00BA018B /* SearchNav */,
 				69308C501F17601000FEA6A9 /* Cells */,
@@ -323,9 +303,8 @@
 			files = (
 				6906E6101F18BC7800BA018B /* PopMenuTableViewCell.xib in Resources */,
 				69BD17AC1F14B92A0078542D /* LaunchScreen.storyboard in Resources */,
-				690287091F20AD6000720035 /* JVRefreshStateView.xib in Resources */,
 				69308C4F1F17523700FEA6A9 /* VSPHomepageSearchView.xib in Resources */,
-				69308C551F1761F100FEA6A9 /* AnnouncementTableViewCell.xib in Resources */,
+				690FD8A61F21E92100CE15F8 /* VSPAnnouncementView.xib in Resources */,
 				69BD17A91F14B92A0078542D /* Assets.xcassets in Resources */,
 				69BD17A71F14B92A0078542D /* Main.storyboard in Resources */,
 				69BD17C61F174C440078542D /* VSPSaleServiceSearchView.xib in Resources */,
@@ -341,11 +320,8 @@
 			files = (
 				6906E5FE1F185F0700BA018B /* HotSaleTableViewCell.m in Sources */,
 				69BD17A41F14B92A0078542D /* SecondViewController.m in Sources */,
-				690287061F20AD6000720035 /* JVRefreshFooterView.m in Sources */,
-				690287071F20AD6000720035 /* JVRefreshHeaderView.m in Sources */,
+				690FD8A41F21E90F00CE15F8 /* VSPAnnouncementView.m in Sources */,
 				69093C001F177BAE006D5DBD /* AdvertisementTableViewCell.m in Sources */,
-				6902870A1F20AD6000720035 /* JVRotateView.m in Sources */,
-				690287081F20AD6000720035 /* JVRefreshStateView.m in Sources */,
 				6906E61B1F1CAF8000BA018B /* VSPCycleView.m in Sources */,
 				69BD17C51F174C440078542D /* VSPSaleServiceSearchView.m in Sources */,
 				6906E60B1F18A31B00BA018B /* PopMenuModel.m in Sources */,

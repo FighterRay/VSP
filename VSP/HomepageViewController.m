@@ -12,7 +12,6 @@
 #import "AnnouncementTableViewCell.h"
 #import "FloorTableViewCell.h"
 #import "VSPHomepageSearchView.h"
-#import "JVRefresh.h"
 
 @interface HomepageViewController ()<UITableViewDelegate, UITableViewDataSource, CCCycleScrollViewClickActionDeleage, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -73,7 +72,7 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CycleViewTableViewCell" forIndexPath:indexPath];
         return cell;
     } else if (row == 1) {
-        AnnouncementTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AnnouncementTableViewCell" forIndexPath:indexPath];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AnnouncementTableViewCell" forIndexPath:indexPath];
         return cell;
     } else if (row == 2) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AdvertisementTableViewCell" forIndexPath:indexPath];
